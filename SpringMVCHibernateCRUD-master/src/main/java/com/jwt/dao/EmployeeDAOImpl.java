@@ -43,6 +43,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 	@Override
 	public Employee updateEmployee(Employee employee) {
+		System.out.println("final sal: "+employee.getSalary()+ "new sal: "+employee.getFname());
+		
 		sessionFactory.getCurrentSession().update(employee);
 		return employee;
 	}

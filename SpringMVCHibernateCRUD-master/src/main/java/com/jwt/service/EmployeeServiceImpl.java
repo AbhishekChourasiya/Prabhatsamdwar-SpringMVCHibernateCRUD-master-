@@ -1,3 +1,4 @@
+
 package com.jwt.service;
 
 import java.util.List;
@@ -27,6 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public List<Employee> getAllEmployees() {
 		return employeeDAO.getAllEmployees();
 	}
+ 
 
 	@Override
 	@Transactional
@@ -45,6 +47,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	public void setEmployeeDAO(EmployeeDAO employeeDAO) {
 		this.employeeDAO = employeeDAO;
+		
+		
 	}
 
 }

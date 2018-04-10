@@ -20,7 +20,11 @@ public class Employee implements Serializable {
 	private int id;
 
 	@Column
-	private String name;
+	private String fname;
+	
+
+	@Column
+	private String lname;
 
 	@Column
 	private String email;
@@ -31,6 +35,15 @@ public class Employee implements Serializable {
 	@Column
 	private String telephone;
 	
+	@Column
+	private String joinDate;
+	
+	@Column
+	private String profile;
+	 
+	@Column
+	private String salary;
+	 
 	
 	
 
@@ -41,14 +54,7 @@ public class Employee implements Serializable {
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+ 
 
 	public String getEmail() {
 		return email;
@@ -72,6 +78,46 @@ public class Employee implements Serializable {
 
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
+	}
+
+	public String getFname() {
+		return fname;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public String getLname() {
+		return lname;
+	}
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+	public String getJoinDate() {
+		return joinDate;
+	}
+
+	public void setJoinDate(String joinDate) {
+		this.joinDate = joinDate;
+	}
+
+	public String getProfile() {
+		return profile;
+	}
+
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
+
+	public String getSalary() {
+		return salary;
+	}
+
+	public void setSalary(String salary) {
+		this.salary = salary;
 	}
 
 }

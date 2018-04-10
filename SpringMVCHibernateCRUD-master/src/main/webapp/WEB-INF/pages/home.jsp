@@ -14,62 +14,233 @@ Although you can use them, for a more unique website, replace these images with 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+
     <title>Human Resource management System</title>
 
     <!-- Bootstrap Core CSS -->
     
-<style type="text/css">
+    <style>
+    
+    <style>
 
-table.paleBlueRows {
-  font-family: "Times New Roman", Times, serif;
-  border: 1px solid #FFFFFF;
+body{
+    background:#FCFCFC;    
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+    
+.pr-12 {
+    padding-right: 12px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.b-1 {
+    border: 1px solid #ebebeb !important;
+}
+
+.card {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 30px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.media {
+    padding: 16px 12px;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.media .avatar {
+    flex-shrink: 0;
+}
+
+.no-radius {
+    border-radius: 0 !important;
+}
+
+.avatar-xl {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 1.25rem;
+}
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #f5f6f7;
+    color: #8b95a5;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.mb-2 {
+    margin-bottom: .5rem!important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.pr-16 {
+    padding-right: 16px !important;
+}
+
+.ls-1 {
+    letter-spacing: 1px !important;
+}
+
+.fw-300 {
+    font-weight: 300 !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.media-body>* {
+    margin-bottom: 0;
+}
+
+small, time, .small {
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #8b95a5;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.mb-12 {
+    margin-bottom: 12px !important;
+}
+
+.text-fade {
+    color: rgba(77,82,89,0.7) !important;
+}
+
+.card-footer:last-child {
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
+
+.card-footer {
+    background-color: #fcfdfe;
+    border-top: 1px solid rgba(77,82,89,0.07);
+    color: #8b95a5;
+    padding: 10px 20px;
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+
+.card-footer {
+    background-color: #fcfdfe;
+    border-top: 1px solid rgba(77, 82, 89, 0.07);
+    color: #8b95a5;
+    padding: 10px 20px
+}
+
+.card-footer>*:last-child {
+    margin-bottom: 0
+}
+
+.hover-shadow {
+    -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.11)
+}
+
+.fs-10 {
+    font-size: 10px !important;
+}
+
+</style>   
+
  
-  text-align: center;
-  border-collapse: collapse;
-}
-table.paleBlueRows td, table.paleBlueRows th {
-  border: 1px solid #FFFFFF;
-  padding: 3px 2px;
-}
-table.paleBlueRows tbody td {
-  font-size: 18px;
-}
-table.paleBlueRows tr:nth-child(even) {
-  background: orange;
-}
-table.paleBlueRows thead {
-  background: black;
-  border-bottom: 5px solid #FFFFFF;
-}
-table.paleBlueRows thead th {
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  border-left: 2px solid #FFFFFF;
-}
-table.paleBlueRows thead th:first-child {
-  border-left: none;
-}
-
-table.paleBlueRows tfoot {
-  font-size: 17px;
-  font-weight: bold;
-  color: #333333;
-  background: orange;
-  border-top: 3px solid #444444;
-}
-table.paleBlueRows tfoot td {
-  font-size: 17px;
-}
-
-
-</style>      
-    <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
-
-    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="<c:url value="/resources/css/custom.css" />" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -83,82 +254,71 @@ table.paleBlueRows tfoot td {
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/HRM/">
-                	<span class="glyphicon glyphicon-fire"></span> 
-                	HRM System
-                </a>
-            </div>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="/HRM/">Home</a>
-                    </li>
-                   
-					<li class="dropdown">
-						<a href="/HRM/newHome" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-						<ul class="dropdown-menu" aria-labelledby="about-us">
-							<li><a href="/HRM/newEmployee">Add/Updtate Employee</a></li>
-							<li><a href="/HRM/newProject">Add/Updtate Project</a></li>
-							<li><a href="/HRM/newSalary">Add/Updtate salary report</a></li>
-						</ul>
-					</li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-                
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
-    </nav>
-
+ 
 	<!-- Header -->
     <header>
     <br><br><br><br><br>
-        <div align="center">
-		<h1>Employee List</h1>
-		
-		<table class="paleBlueRows" border="1">
-<thead>
-<tr>
-			<th>Name</th>
-			<th>Email</th>
-			<th>Address</th>
-			<th>Telephone</th>
-			<th>Action</th>
-</tr>
-</thead>
-<tfoot>
-
+   
 			<c:forEach var="employee" items="${listEmployee}">
 				<tr>
+				
+				<div class="col-md-10">
+    <div class="card b-1 hover-shadow mb-20">
+        <div class="media card-body">
+            <div class="media-left pr-32" style=" margin-left: 30px;margin-right: 20px;">
+                <img style=" height: 200px; width: 200px;"  src="http://bootdey.com/img/Content/avatar/avatar${employee.id%8+1}.png" alt="...">
+            </div>
+            
+            <div class="media-body">
+            <hr><br>
+                <div class="mb-2">
+                    <span class="fs-20 pr-16">${employee.fname} ${employee.lname}</span>
+                      
+                  
+                </div>
+                <hr><br>
+                <small class="fs-16 fw-300 ls-1">${employee.profile}</small><br><br>
+                <small class="fs-16 fw-300 ls-1">${employee.email}</small><br><br>
+                <%-- <small class="fs-16 fw-300 ls-1">${employee.address}</small><br><br> --%>
+                <small class="fs-16 fw-300 ls-1">${employee.telephone}</small><br>
+                <br>
+            </div>
+            
+            <div class="media-right text-right d-none d-md-block" style="margin-left:850px;">
+                <p class="fs-28 text-fade mb-12"><i class="fa fa-map-marker pr-1"></i> ${employee.address}</p>
+                <span class="text-fade"><i class="fa fa-money pr-1"></i> $60 per hour</span>
+            </div>
+        </div>
+        <footer class="card-footer flexbox align-items-center">
+            <div>
+                <strong>Joined on:</strong>
+                <span>${employee.joinDate}</span>
+            </div>
+            <div class="card-hover-show">
+            
+           		
 
-					<td>${employee.name}</td>
-					<td>${employee.email}</td>
-					<td>${employee.address}</td>
-					<td>${employee.telephone}</td>
-					<td><a href="editEmployee?id=${employee.id}">Edit</a>
-						&nbsp;&nbsp;&nbsp;&nbsp; <a
-						href="deleteEmployee?id=${employee.id}">Delete</a></td>
+<!-- Trigger/Open The Modal -->
+				<a class="button button3" href="editEmployee?id=${employee.id}" >Promotions/Bonus</a>
+           		
+                <a  class="button button2" href="#">Download CV   </a>
+                
+               <a class="button button3" href="mailto:${employee.email}?Subject=Hello%20${employee.fname}" target="_top"> Contact</a>
+               <a class="button button4" href="editEmployee?id=${employee.id}">Update</a>
+               <a class="button button5" href="deleteEmployee?id=${employee.id}">Delete</a>
+                
+            </div>
+        </footer>
+    </div>
 
-				</tr>
+				  
 			</c:forEach>
-			</tfoot>
+
+</frame>
+
 		</table>
-		<h4>
-			New Employee Register <a href="newEmployee">here</a>
+		<h4 align="right">
+			  <a class="button button" href="newEmployee" >New Employee Register Here</a>
 		</h4>
 		
 	 
@@ -166,27 +326,7 @@ table.paleBlueRows tfoot td {
     </header>
 
 	 
-
-	 	<!-- Footer -->
-    <footer class="page-footer">
-    
-    	<!-- Contact Us -->
-        <div class="contact">
-        	<div class="container">
-				<h2 class="section-heading">Contact Us</h2>
-				<p><span class="glyphicon glyphicon-earphone"></span><br> +1(23) 456 7890</p>
-				<p><span class="glyphicon glyphicon-envelope"></span><br> info@example.com</p>
-        	</div>
-        </div>
-        	
-        <!-- Copyright etc -->
-        <div class="small-print">
-        	<div class="container">
-        		<p>Copyright &copy; NITK 2018</p>
-        	</div>
-        </div>
-        
-    </footer>
+ 
 
     <!-- jQuery -->
     <script src="<c:url value="/resources/js/jquery-1.11.3.min.js" />"></script>

@@ -26,6 +26,7 @@ public class Salary {
 
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
 	@Column

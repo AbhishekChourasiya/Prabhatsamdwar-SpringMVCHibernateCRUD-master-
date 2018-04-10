@@ -13,11 +13,8 @@
         <h1>New/Edit Salary</h1>
         <form:form action="saveSalary" method="post" modelAttribute="salary">
         <table>
-            <tr>
-                <td>id:</td>
-                <td><form:input path="id" /></td>
-            </tr>
-          
+            <form:hidden path="id"/>
+                                      
             <tr>
                 <td>empid:</td>
                 <td><form:input path="empid" /></td>

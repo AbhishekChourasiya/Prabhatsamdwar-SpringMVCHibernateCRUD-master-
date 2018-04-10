@@ -35,14 +35,14 @@ public class EmployeeController {
 		return model;
 	}
 	
-	@RequestMapping(value = "/newHome")
-	public ModelAndView listhome(ModelAndView model) throws IOException {
+	@RequestMapping(value = "/home")
+	public ModelAndView home(ModelAndView model) throws IOException {
 		List<Employee> listEmployee = employeeService.getAllEmployees();
 		model.addObject("listEmployee", listEmployee);
 		model.setViewName("home");
 		return model;
 	}
-
+	
 	@RequestMapping(value = "/newEmployee", method = RequestMethod.GET)
 	public ModelAndView newContact(ModelAndView model) {
 		Employee employee = new Employee();
@@ -59,18 +59,18 @@ public class EmployeeController {
 		} else {
 			employeeService.updateEmployee(employee);
 		}
-		return new ModelAndView("redirect:/");
+		return new ModelAndView("redirect:/home");
 	}
 
 	@RequestMapping(value = "/deleteEmployee", method = RequestMethod.GET)
 	public ModelAndView deleteEmployee(HttpServletRequest request) {
 		int employeeId = Integer.parseInt(request.getParameter("id"));
 		employeeService.deleteEmployee(employeeId);
-		return new ModelAndView("redirect:/");
+		return new ModelAndView("redirect:/home");
 	}
 
 	@RequestMapping(value = "/editEmployee", method = RequestMethod.GET)
-	public ModelAndView editContact(HttpServletRequest request) {
+	public ModelAndView editEmployee(HttpServletRequest request) {
 		int employeeId = Integer.parseInt(request.getParameter("id"));
 		Employee employee = employeeService.getEmployee(employeeId);
 		ModelAndView model = new ModelAndView("EmployeeForm");
@@ -79,4 +79,48 @@ public class EmployeeController {
 		return model;
 	}
 
+	@RequestMapping(value = "/getEmployee", method = RequestMethod.GET)
+	public ModelAndView getEmployee(HttpServletRequest request) {
+		String val;
+		int employeeId;
+		
+		System.out.println("seacrh" +request.getParameter("search"));
+		if(request.getParameter("search")!=null)
+		{
+			employeeId=Integer.parseInt(request.getParameter("search"));
+		}else {
+		employeeId = Integer.parseInt(request.getParameter("id"));
+		}
+		Employee employee = employeeService.getEmployee(employeeId);
+		ModelAndView model;
+		if(employee!=null && employee.getFname()!=null) {
+			  model = new ModelAndView("EmployeeDetail");
+			model.addObject("employee", employee);
+		}else {
+			  model = new ModelAndView("error");
+//			model.addObject("employee", employee);
+			
+		}
+
+		return model;
+	}
+
+	@RequestMapping(value = "/promoteEmployee", method = RequestMethod.GET)
+	public ModelAndView promoteEmployee(HttpServletRequest request) {
+		int employeeId = Integer.parseInt(request.getParameter("id"));
+		int employeeSalBonus = Integer.parseInt(request.getParameter("bonus"));
+		System.out.println("sal: "+employeeSalBonus);
+		Employee employee = employeeService.getEmployee(employeeId);
+	
+		employee.setSalary(String.valueOf((Integer.parseInt(employee.getSalary())+ employeeSalBonus)));
+		
+		System.out.println("new sal: "+employee.getSalary()+ "new sal: "+employee.getFname());
+		
+		employeeService.updateEmployee(employee);
+		
+		ModelAndView model = new ModelAndView("EmployeeDetail");
+		model.addObject("employee", employee);
+
+		return model;
+	}
 }
