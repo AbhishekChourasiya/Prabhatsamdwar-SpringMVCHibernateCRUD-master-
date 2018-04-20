@@ -109,11 +109,11 @@ public class EmployeeController {
 	public ModelAndView promoteEmployee(HttpServletRequest request) {
 		int employeeId = Integer.parseInt(request.getParameter("id"));
 		int employeeSalBonus = Integer.parseInt(request.getParameter("bonus"));
-		System.out.println("sal: "+employeeSalBonus);
+		System.out.println("sal: "+employeeSalBonus+" pro: "+request.getParameter("profile"));
 		Employee employee = employeeService.getEmployee(employeeId);
 	
 		employee.setSalary(String.valueOf((Integer.parseInt(employee.getSalary())+ employeeSalBonus)));
-		
+		employee.setProfile(request.getParameter("profile"));
 		System.out.println("new sal: "+employee.getSalary()+ "new sal: "+employee.getFname());
 		
 		employeeService.updateEmployee(employee);

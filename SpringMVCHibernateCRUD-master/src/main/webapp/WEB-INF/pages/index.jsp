@@ -8,7 +8,47 @@ Although you can use them, for a more unique website, replace these images with 
 <html lang="en">
 
 <head>
+<style>.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	text-align:right;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
+</style>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,13 +105,26 @@ Although you can use them, for a more unique website, replace these images with 
 
 				<li class="dropdown"><a href="/HRM/home"
 					class="dropdown-toggle" data-toggle="dropdown" role="button"
-					aria-haspopup="true" aria-expanded="false">Services <span
+					aria-haspopup="true" aria-expanded="false">Add <span
 						class="caret"></span></a>
 					<ul class="dropdown-menu" aria-labelledby="about-us">
-						<li><a href="/HRM/newEmployee">Add/Updtate Employee</a></li>
-						<li><a href="/HRM/newProject">Add/Updtate Project</a></li>
-						<li><a href="/HRM/newSalary">Add/Updtate salary report</a></li>
+						<li><a href="/HRM/newEmployee">Add Employee</a></li>
+						<li><a href="/HRM/newProject">Add Project</a></li>
+						<li><a href="/HRM/newSalary">Add salary report</a></li>
 					</ul></li>
+					
+					
+					<li class="dropdown"><a href="/HRM/home"
+					class="dropdown-toggle" data-toggle="dropdown" role="button"
+					aria-haspopup="true" aria-expanded="false">View <span
+						class="caret"></span></a>
+					<ul class="dropdown-menu" aria-labelledby="about-us">
+						<li><a href="/HRM/home">All Employees</a></li>
+						<li><a href="/HRM/projects">All Projects</a></li>
+						<li><a href="/HRM/salary">All Salary reports</a></li>
+					</ul></li>
+					
+					
 				<li><a href="#">Contact</a></li>
 				<li>
 					<div style="margin-top: 14px;">
@@ -81,6 +134,13 @@ Although you can use them, for a more unique website, replace these images with 
 								value="search" />
 						</form>
 					</div>
+				</li>
+				
+				<li  style="margin-left: 24px;">
+				 <a href="/HRM/" class="myButton">Logout  </a>
+
+
+				
 				</li>
 			</ul>
 

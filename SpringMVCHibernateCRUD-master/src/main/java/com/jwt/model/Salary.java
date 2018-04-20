@@ -1,5 +1,7 @@
 package com.jwt.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,11 +11,13 @@ import javax.persistence.Table;
 
 @Entity(name="SALARY_TBL")
 @Table(name = "SALARY_TBL")
-public class Salary {
+public class Salary implements Serializable {
+
+	private static final long serialVersionUID = -3465813074586302849L;
 
 	public Salary() {
+		
 	}
-	
 	
 	public Salary(int id,int empid, String month, String year, String amount) {
 		super();

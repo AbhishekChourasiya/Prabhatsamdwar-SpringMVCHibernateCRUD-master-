@@ -96,6 +96,22 @@
             <version>${jsp-version}</version>
             <scope>provided</scope>
         </dependency>
+     
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.0.5.RELEASE</version>
+</dependency>
+ 
+  
+    <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-core</artifactId>
+    <version>5.0.4.RELEASE</version>
+</dependency>
+
  
         <!-- JSTL dependency -->
         <dependency>
@@ -114,7 +130,7 @@
              
        </dependencies>
        <build>
-              <finalName>SpringMVCHibernateCRUD</finalName>
+              <finalName>HRM</finalName>
               <plugins>
               <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
