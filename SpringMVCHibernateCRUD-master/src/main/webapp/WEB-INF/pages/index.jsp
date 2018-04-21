@@ -182,10 +182,7 @@ Although you can use them, for a more unique website, replace these images with 
 	<section class="content">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
-				<img class="img-responsive img-circle center-block"
-					src="images/microphone.jpg" alt="">
-			</div>
+			 
 			<div class="col-sm-6">
 				<h2 class="section-header">Best in Class</h2>
 				<p class="lead text-muted">Holisticly predominate extensible
@@ -211,10 +208,7 @@ Although you can use them, for a more unique website, replace these images with 
 					service.</p>
 				<a href="#" class="btn btn-default btn-lg">Test It</a>
 			</div>
-			<div class="col-sm-6">
-				<img class="img-responsive img-circle center-block"
-					src="images/iphone.jpg" alt="">
-			</div>
+			 
 
 		</div>
 	</div>
