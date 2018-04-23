@@ -1,0 +1,36 @@
+
+<div style="padding-left:16px">
+ 
+
+
+   
+      <div align="center">
+        <h1>New/Edit Salary</h1>
+        <form:form action="saveSalary" method="post" modelAttribute="salary">
+        <table>
+            <form:hidden path="id"/>
+                                      
+            <tr>
+                <td>empid:</td>
+                <td><form:input path="empid" /></td>
+            </tr>
+             <tr>
+                <td>amount:</td>
+                <td><form:input path="amount" /></td>
+            </tr>
+             <tr>
+                <td>month:</td>
+                <td><form:input path="month" /></td>
+            </tr>
+             <tr>
+                <td>year:</td>
+                <td><form:input path="year" /></td>
+            </tr>
+          
+          
+          
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Save"></td>
+            </tr>
+        </table>
+        </form:form>

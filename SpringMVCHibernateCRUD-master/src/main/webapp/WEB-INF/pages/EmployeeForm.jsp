@@ -14,7 +14,29 @@
 body{
 background:#f9f9fb;    
 }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -655,6 +677,12 @@ color: #a2a6af
 
 </head>
 <body>
+<div class="topnav">
+  <a class="active" href="/HRM/myHome">Home</a>
+  <a href="/HRM/home">All Employees</a>
+  <a href="/HRM/projects">All Projects</a>
+  <a href="/HRM/salary">All Salary</a>
+</div> 
      
                             
 <!-- The Modal -->
@@ -735,17 +763,7 @@ window.onclick = function(event) {
 
                     </div>
 
-            		<nav class="side-menu"  >
-        				<ul class="nav">
-        					<li class="active"><a href="#"><span class="fa fa-user"></span> Profile</a></li>
-        					<li><a href="#"><span class="fa fa-cog"></span> Settings</a></li>
-        					<li><a href="#"><span class="fa fa-credit-card"></span> Attendence</a></li>
-        					<li><a href="#"><span class="fa fa-envelope"></span> Messages</a></li>
-        					
-        					<li><a href="#"><span class="fa fa-th"></span> Drive</a></li>
-        					<li><a href="#"><span class="fa fa-clock-o"></span> Reminders</a></li>
-        				</ul>
-        			</nav>
+            		 
                 </div>
                 <div class="content-panel" style="margin-left:355px;">
                     <h2 class="title">Profile</h2>

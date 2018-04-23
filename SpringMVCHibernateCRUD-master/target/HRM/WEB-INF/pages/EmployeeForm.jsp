@@ -735,17 +735,7 @@ window.onclick = function(event) {
 
                     </div>
 
-            		<nav class="side-menu"  >
-        				<ul class="nav">
-        					<li class="active"><a href="#"><span class="fa fa-user"></span> Profile</a></li>
-        					<li><a href="#"><span class="fa fa-cog"></span> Settings</a></li>
-        					<li><a href="#"><span class="fa fa-credit-card"></span> Attendence</a></li>
-        					<li><a href="#"><span class="fa fa-envelope"></span> Messages</a></li>
-        					
-        					<li><a href="#"><span class="fa fa-th"></span> Drive</a></li>
-        					<li><a href="#"><span class="fa fa-clock-o"></span> Reminders</a></li>
-        				</ul>
-        			</nav>
+            		 
                 </div>
                 <div class="content-panel" style="margin-left:355px;">
                     <h2 class="title">Profile</h2>

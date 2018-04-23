@@ -22,6 +22,14 @@ public class LoginController {
     mav.addObject("login", new Login());
     return mav;
   }
+  
+  @RequestMapping(value = "/myHome", method = RequestMethod.GET)
+  public ModelAndView showHome(HttpServletRequest request, HttpServletResponse response) {
+    ModelAndView mav = new ModelAndView("index");
+     
+    return mav;
+  }
+  
   @RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
   public ModelAndView loginProcess(HttpServletRequest request, HttpServletResponse response,
   @ModelAttribute("login") Login login) {

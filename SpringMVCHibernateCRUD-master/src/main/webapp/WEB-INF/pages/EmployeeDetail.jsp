@@ -41,6 +41,29 @@ body{
     margin-top:20px;
     background:white;
 }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 /**
  * Panels
  */
@@ -244,49 +267,13 @@ body{
     
 </head>
 
-<body>
-
-    <!-- Navigation -->
-    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                	<span class="glyphicon glyphicon-fire"></span> 
-                	HRM System
-                </a>
-            </div>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="#">home</a>
-                    </li>
-                   
-					<li class="dropdown">
-						<a href="/HRM/home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-						<ul class="dropdown-menu" aria-labelledby="about-us">
-							<li><a href="/HRM/newEmployee">Add/Updtate Employee</a></li>
-							<li><a href="/HRM/newProject">Add/Updtate Project</a></li>
-							<li><a href="/HRM/newSalary">Add/Updtate salary report</a></li>
-						</ul>
-					</li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-                
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
-    </nav>
  
- <br><br><br><br><br><br>
+<div class="topnav">
+  <a class="active" href="/HRM/myHome">Home</a>
+  <a href="/HRM/home">All Employees</a>
+  <a href="/HRM/projects">All Projects</a>
+  <a href="/HRM/salary">All Salary</a>
+</div> <br><br><br> 
  
 <div class="container">
 <div class="row">

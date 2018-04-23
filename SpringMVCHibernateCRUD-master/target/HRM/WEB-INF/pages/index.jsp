@@ -8,7 +8,47 @@ Although you can use them, for a more unique website, replace these images with 
 <html lang="en">
 
 <head>
+<style>.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	text-align:right;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
+</style>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,13 +105,26 @@ Although you can use them, for a more unique website, replace these images with 
 
 				<li class="dropdown"><a href="/HRM/home"
 					class="dropdown-toggle" data-toggle="dropdown" role="button"
-					aria-haspopup="true" aria-expanded="false">Services <span
+					aria-haspopup="true" aria-expanded="false">Add <span
 						class="caret"></span></a>
 					<ul class="dropdown-menu" aria-labelledby="about-us">
-						<li><a href="/HRM/newEmployee">Add/Updtate Employee</a></li>
-						<li><a href="/HRM/newProject">Add/Updtate Project</a></li>
-						<li><a href="/HRM/newSalary">Add/Updtate salary report</a></li>
+						<li><a href="/HRM/newEmployee">Add Employee</a></li>
+						<li><a href="/HRM/newProject">Add Project</a></li>
+						<li><a href="/HRM/newSalary">Add salary report</a></li>
 					</ul></li>
+					
+					
+					<li class="dropdown"><a href="/HRM/home"
+					class="dropdown-toggle" data-toggle="dropdown" role="button"
+					aria-haspopup="true" aria-expanded="false">View <span
+						class="caret"></span></a>
+					<ul class="dropdown-menu" aria-labelledby="about-us">
+						<li><a href="/HRM/home">All Employees</a></li>
+						<li><a href="/HRM/projects">All Projects</a></li>
+						<li><a href="/HRM/salary">All Salary reports</a></li>
+					</ul></li>
+					
+					
 				<li><a href="#">Contact</a></li>
 				<li>
 					<div style="margin-top: 14px;">
@@ -81,6 +134,13 @@ Although you can use them, for a more unique website, replace these images with 
 								value="search" />
 						</form>
 					</div>
+				</li>
+				
+				<li  style="margin-left: 24px;">
+				 <a href="/HRM/" class="myButton">Logout  </a>
+
+
+				
 				</li>
 			</ul>
 
@@ -94,9 +154,8 @@ Although you can use them, for a more unique website, replace these images with 
 	<div class="header-content">
 		<div class="header-content-inner">
 			<h1>Human Resource management</h1>
-			<p>Objectively innovate empowered manufactured products whereas
-				parallel platforms.</p>
-			<a href="/HRM/home" class="btn btn-primary btn-lg">Engage Now</a>
+			<p>Human resource management involves developing and administering programs that are designed to increase the effectiveness of an organization or business. It includes the entire spectrum of creating, managing, and cultivating the employer-employee relationship.</p>
+			
 		</div>
 	</div>
 	</header>
@@ -107,12 +166,8 @@ Although you can use them, for a more unique website, replace these images with 
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<span class="glyphicon glyphicon-apple" style="font-size: 60px"></span>
-				<h2 class="section-heading">Completely synergize resource
-					taxing relationships</h2>
-				<p class="text-light">Professionally cultivate one-to-one
-					customer service with robust ideas. Dynamically innovate
-					resource-leveling customer service for state of the art customer
-					service.</p>
+				<h2 class="section-heading">Employee Management</h2>
+				<p class="text-light">The responsibilities of a human resource manager fall into three major areas: staffing, employee compensation and benefits, and defining/designing work. Essentially, the purpose of HRM is to maximize the productivity of an organization by optimizing the effectiveness of its employees.</p>
 			</div>
 		</div>
 	</div>
@@ -122,17 +177,12 @@ Although you can use them, for a more unique website, replace these images with 
 	<section class="content">
 	<div class="container">
 		<div class="row">
+			 
 			<div class="col-sm-6">
-				<img class="img-responsive img-circle center-block"
-					src="images/microphone.jpg" alt="">
-			</div>
-			<div class="col-sm-6">
-				<h2 class="section-header">Best in Class</h2>
-				<p class="lead text-muted">Holisticly predominate extensible
-					testing procedures for reliable supply chains. Dynamically innovate
-					resource-leveling customer service for state of the art customer
-					service.</p>
-				<a href="#" class="btn btn-primary btn-lg">Classify It</a>
+				<h2 class="section-header">Salary Management</h2>
+				<p class="lead text-muted">Salary in the sense of "money paid to employees" plays a major role in a company for several reasons.A Payroll is a company's list of its employees, but the term is commonly used to refer to the total amount of money that a company pays to its employees a company's records of its employees salaries and wages, bonuses, and
+the company's department that calculates and pays these.</p>
+				
 			</div>
 
 		</div>
@@ -144,17 +194,11 @@ Although you can use them, for a more unique website, replace these images with 
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<h2 class="section-header">Superior Quality</h2>
-				<p class="lead text-light">Holisticly predominate extensible
-					testing procedures for reliable supply chains. Dynamically innovate
-					resource-leveling customer service for state of the art customer
-					service.</p>
-				<a href="#" class="btn btn-default btn-lg">Test It</a>
+				<h2 class="section-header">Project Management</h2>
+				<p class="lead text-light">The most important resource to a project is its people—the project team. Projects require specific expertise at specific moments in the schedule, depending on the milestones being delivered, or the given phase of the project.</p>
+				
 			</div>
-			<div class="col-sm-6">
-				<img class="img-responsive img-circle center-block"
-					src="images/iphone.jpg" alt="">
-			</div>
+			 
 
 		</div>
 	</div>
@@ -165,15 +209,15 @@ Although you can use them, for a more unique website, replace these images with 
 		<div class="row promo">
 			<a href="#">
 				<div class="col-md-4 promo-item item-1">
-					<h3>Unleash</h3>
+					<h3>Employee</h3>
 				</div>
 			</a> <a href="#">
 				<div class="col-md-4 promo-item item-2">
-					<h3>Synergize</h3>
+					<h3>Salary</h3>
 				</div>
 			</a> <a href="#">
 				<div class="col-md-4 promo-item item-3">
-					<h3>Procrastinate</h3>
+					<h3>Project</h3>
 				</div>
 			</a>
 		</div>
@@ -185,13 +229,10 @@ Although you can use them, for a more unique website, replace these images with 
 	<div class="container">
 		<h2 class="section-header">
 			<span class="glyphicon glyphicon-pushpin text-primary"></span><br>
-			Sanity Check
+			Advantage Of HRM
 		</h2>
-		<p class="lead text-muted">Holisticly predominate extensible
-			testing procedures for reliable supply chains. Dynamically innovate
-			resource-leveling customer service for state of the art customer
-			service.</p>
-		<a href="#" class="btn btn-primary btn-lg">Check Now</a>
+		<p class="lead text-muted">Adopting an HR strategy that is concerned with the organization's larger mission and goals has multiple advantages and benefits for the company.</p>
+		
 	</div>
 	</div>
 	</section>
@@ -202,12 +243,11 @@ Although you can use them, for a more unique website, replace these images with 
 		<div class="container">
 			<h2 class="section-heading">Contact Us</h2>
 			<p>
-				<span class="glyphicon glyphicon-earphone"></span><br> +1(23)
-				456 7890
+				<span class="glyphicon glyphicon-earphone"></span><br>+91 9731518897
 			</p>
 			<p>
 				<span class="glyphicon glyphicon-envelope"></span><br>
-				info@example.com
+				 prabhat.samdwar1022@gmail.com
 			</p>
 		</div>
 	</div>
